@@ -9,6 +9,15 @@ clear information architecture and simplified user interaction flows.
 # Before & After
 
 ## Homepage
+<p align="center">
+  <img src="assets/main1 before" width="45%" />
+  <img src="assets/main1 after" width="45%" />
+</p>
+
+<p align="center">
+  <img src="assets/IMG_9529.jpg" width="45%" />
+  <img src="assets/IMG_9530.PNG" width="45%" />
+</p>
 
 
 # Overview
