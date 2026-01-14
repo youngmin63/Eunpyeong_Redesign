@@ -1,6 +1,6 @@
 # Eunpyeong Facilities Website Redesign
 
-This project is a university web programming final assignment focused on redesigning the
+This project is a final assignment for a university web programming course, focused on redesigning the
 official website of the Eunpyeong-gu Facilities Management Corporation to improve usability,
 information accessibility, and overall user experience for local residents.
 
