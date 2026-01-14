@@ -6,18 +6,46 @@ information accessibility, and overall user experience for local residents.
 
 The website was designed and implemented using HTML, CSS, and JavaScript, with a focus on
 clear information architecture and simplified user interaction flows.
-# Before & After
 
-## Homepage
-<p align="center">
-  <img src="assets/main1 before" width="45%" />
-  <img src="assets/main1 after" width="45%" />
-</p>
+## Main Page Simplification
 
-<p align="center">
-  <img src="assets/IMG_9529.jpg" width="45%" />
-  <img src="assets/IMG_9530.PNG" width="45%" />
-</p>
+- Removed duplicated top and centre navigation menus
+- Prioritised commonly used services and quick-access buttons
+
+<div style="display:flex; justify-content:center; align-items:flex-start; gap:16px;">
+  <img src="assets/main1 before.png" width="45%" />
+  <img src="assets/main1 after.png" width="45%" />
+</div>
+
+
+## Programme Registration Flow
+
+- Implemented dynamic search and filtering using JavaScript
+- Improved visibility of programme lists without additional scrolling
+  
+<div style="display:flex; justify-content:center; align-items:flex-start; gap:16px;">
+  <img src="assets/main2 before.png" width="45%" />
+  <img src="assets/main2 after.png" width="45%" />
+</div>
+
+
+## Participation & Communication Section
+
+- Introduced a tab-based interface for easier category switching
+  
+<div style="display:flex; justify-content:center; align-items:flex-start; gap:16px;">
+  <img src="assets/main3 before.png" width="45%" />
+  <img src="assets/main3 after.png" width="45%" />
+</div>
+
+## Clean Report Centre
+
+- Simplified reporting steps into a single-page interaction flow
+
+<div style="display:flex; justify-content:center; align-items:flex-start; gap:16px;">
+  <img src="assets/main4 before.png" width="45%" />
+  <img src="assets/main4 after.png" width="45%" />
+</div>
 
 
 # Overview
@@ -42,30 +70,6 @@ community communication sections, and the civil complaint reporting process.
 - Users of public facilities (sports centres, programmes, community services)
 - First-time visitors to the public website
 
-# Key Improvements
-
-## Information Architecture (IA) Redesign
-
-- Reorganised menus based on user tasks and service goals
-
-## Main Page Simplification
-
-- Removed duplicated top and centre navigation menus
-- Prioritised commonly used services and quick-access buttons
-
-## Programme Registration Flow
-
-- Implemented dynamic search and filtering using JavaScript
-- Improved visibility of programme lists without additional scrolling
-
-## Participation & Communication Section
-
-- Introduced a tab-based interface for easier category switching
-
-## Clean Report Centre
-
-- Simplified reporting steps into a single-page interaction flow
-
 # Tech Stack
 
 - HTML5
@@ -74,7 +78,9 @@ community communication sections, and the civil complaint reporting process.
 
 # Challenges & Solutions
 
-## Challenge: Information overload and inefficient user flows
+## Challenge: 
+Information overload and inefficient user flows
+
 ## Solution:
 The original website attempted to present too much information on single pages, making it
 difficult for users to locate key services.
