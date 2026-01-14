@@ -74,7 +74,7 @@ community communication sections, and the civil complaint reporting process.
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript
 
 # Challenges & Solutions
 
