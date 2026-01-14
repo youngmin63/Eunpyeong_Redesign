@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셔틀버스노선 - 은평구시설관리공단</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/header_logo.png" alt="은평구시설관리공단" class="logo-icon"></a>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">주차사업</a>
+                <a href="#" class="nav-item">체육사업</a>
+                <a href="#" class="nav-item">건강여가사업</a>
+                <a href="participation.html" class="nav-item">참여와소통</a>
+                <a href="#" class="nav-item">공단소식</a>
+                <a href="#" class="nav-item">정보공개</a>
+                <a href="#" class="nav-item">공단소개</a>
+            </nav>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav">
+        <div class="breadcrumb-container">
+            <a href="index.html" class="breadcrumb-home">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-current">셔틀버스노선</span>
+            <div class="breadcrumb-actions">
+                <button class="breadcrumb-icon-btn" title="인쇄">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9V2H18V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 14H6V22H18V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="breadcrumb-icon-btn" title="설정">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="course-main">
+        <div class="course-container">
+            <h2 class="course-page-title">셔틀버스노선</h2>
+
+            <!-- Route Tabs -->
+            <div class="shuttle-tabs">
+                <button class="shuttle-tab active" data-route="1">1호차</button>
+                <button class="shuttle-tab" data-route="2">2호차</button>
+                <button class="shuttle-tab" data-route="3">3호차</button>
+                <button class="shuttle-tab" data-route="4">2호차</button>
+                <button class="shuttle-tab" data-route="5">1,5호차</button>
+                <button class="shuttle-tab" data-route="fixed">한정 운행</button>
+                <button class="shuttle-tab" data-route="saturday1">토요일 1</button>
+                <button class="shuttle-tab" data-route="saturday2">토요일 2</button>
+            </div>
+
+            <!-- Route Details -->
+            <div class="shuttle-route-content" id="routeContent">
+                <!-- Route 1 Content -->
+                <div class="route-details active" data-route="1">
+                    <div class="route-direction">
+                        <h3>갈현동, 구산동, 신사1동 방면</h3>
+                    </div>
+                    <div class="route-schedule">
+                        <h4>운행시간</h4>
+                        <p>아래시간 매시 10분 출발</p>
+                        <div class="schedule-times">
+                            <span class="time-range">08:10~11:50</span>
+                            <span class="time-range">13:10~17:50</span>
+                        </div>
+                    </div>
+                    <div class="route-map">
+                        <div class="route-map-container">
+                            <img src="assets/shuttle1.png" alt="1호차 노선도" class="route-map-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- Route 2 Content -->
+                <div class="route-details" data-route="2">
+                    <div class="route-direction">
+                        <h3>2호차 노선</h3>
+                    </div>
+                    <div class="route-schedule">
+                        <h4>운행시간</h4>
+                        <p>아래시간 매시 10분 출발</p>
+                        <div class="schedule-times">
+                            <span class="time-range">08:10~11:50</span>
+                            <span class="time-range">13:10~17:50</span>
+                        </div>
+                    </div>
+                    <div class="route-map">
+                        <div class="route-map-container">
+                            <img src="assets/shuttle2.png" alt="2호차 노선도" class="route-map-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- Route 3 Content -->
+                <div class="route-details" data-route="3">
+                    <div class="route-direction">
+                        <h3>3호차 노선</h3>
+                    </div>
+                    <div class="route-schedule">
+                        <h4>운행시간</h4>
+                        <p>아래시간 매시 10분 출발</p>
+                        <div class="schedule-times">
+                            <span class="time-range">08:10~11:50</span>
+                            <span class="time-range">13:10~17:50</span>
+                        </div>
+                    </div>
+                    <div class="route-map">
+                        <div class="route-map-container">
+                            <img src="assets/shuttle3.png" alt="3호차 노선도" class="route-map-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Information Box -->
+            <div class="shuttle-info-box">
+                <ul class="shuttle-info-list">
+                    <li>도착 5분 전 대기 요망</li>
+                    <li>
+                        은평구민체육센터 셔틀버스 실시간 위치 알림 서비스
+                        <div class="shuttle-manual-buttons">
+                            <button class="shuttle-manual-btn">헬로버스 사용자 매뉴얼 (안드로이드)</button>
+                            <button class="shuttle-manual-btn">헬로버스 사용자 매뉴얼 (아이폰)</button>
+                        </div>
+                    </li>
+                    <li>당월 수강생만 이용하실 수 있습니다.</li>
+                    <li>셔틀버스는 일요일과 공휴일은 운행하지 않습니다.</li>
+                    <li>19시 이후는 5호차만 운행</li>
+                    <li>차량도착시 탑승의사표시요망!!</li>
+                    <li>주말(토요일) 셔틀은 34인승 2대 운행</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Tab switching
+        document.querySelectorAll('.shuttle-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.shuttle-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const route = this.getAttribute('data-route');
+                // Here you would load different route content based on the selected tab
+                // For now, we'll just show/hide content
+                document.querySelectorAll('.route-details').forEach(detail => {
+                    detail.classList.remove('active');
+                });
+                const activeDetail = document.querySelector(`.route-details[data-route="${route}"]`);
+                if (activeDetail) {
+                    activeDetail.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

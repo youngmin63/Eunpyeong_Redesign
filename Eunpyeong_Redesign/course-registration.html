@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체육프로그램 수강신청 - 은평구시설관리공단</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/header_logo.png" alt="은평구시설관리공단" class="logo-icon"></a>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">주차사업</a>
+                <a href="#" class="nav-item">체육사업</a>
+                <a href="#" class="nav-item">건강여가사업</a>
+                <a href="participation.html" class="nav-item">참여와소통</a>
+                <a href="#" class="nav-item">공단소식</a>
+                <a href="#" class="nav-item">정보공개</a>
+                <a href="#" class="nav-item">공단소개</a>
+            </nav>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav">
+        <div class="breadcrumb-container">
+            <a href="index.html" class="breadcrumb-home">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="#" class="breadcrumb-item">온라인신청</a>
+           
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-current">수강신청</span>
+            <div class="breadcrumb-actions">
+                <button class="breadcrumb-icon-btn" title="인쇄">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9V2H18V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 14H6V22H18V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="breadcrumb-icon-btn" title="설정">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="course-main">
+        <div class="course-container">
+            <h2 class="course-page-title">체육프로그램 수강신청</h2>
+
+            <!-- Instruction Bar -->
+            <div class="course-instruction-bar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>수강신청을 진행할 센터와 분류를 선택하세요.</span>
+            </div>
+
+            <!-- Selection Form -->
+            <div class="course-selection-form">
+                <div class="selection-group">
+                    <label class="selection-label">센터</label>
+                    <select class="selection-dropdown" id="centerSelect">
+                        <option value="">센터선택</option>
+                        <option value="sports-town">은평종합스포츠타운</option>
+                        <option value="swimming-pool">은평청여울수영장</option>
+                    </select>
+                </div>
+                <div class="selection-group">
+                    <label class="selection-label">대분류</label>
+                    <select class="selection-dropdown" id="majorCategorySelect" disabled>
+                        <option value="">대분류 선택</option>
+                    </select>
+                </div>
+                <div class="selection-group">
+                    <label class="selection-label">소분류</label>
+                    <select class="selection-dropdown" id="minorCategorySelect" disabled>
+                        <option value="">소분류 선택</option>
+                    </select>
+                </div>
+                <div class="selection-actions">
+                    <button class="btn-reset">초기화</button>
+                    <button class="btn-search">조회</button>
+                </div>
+            </div>
+
+            <p class="course-note">※ 센터 선택 시 대분류, 소분류까지 모두 선택하여야 정보를 확인할 수 있습니다.</p>
+
+            <!-- Course List Section -->
+            <div class="course-list-section">
+                <div class="course-list-header">
+                    <div class="course-status-buttons">
+                        <button class="status-btn active" data-status="new">신규접수</button>
+                        <button class="status-btn" data-status="closed">접수종료</button>
+                    </div>
+                </div>
+
+                <div class="course-table-container">
+                    <table class="course-table">
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>센터</th>
+                                <th>유형/분류</th>
+                                <th>강좌명</th>
+                                <th>요일/시간</th>
+                                <th>접수인원/정원</th>
+                                <th>대상</th>
+                                <th>강사명</th>
+                                <th>신청</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="course-empty-row">
+                                <td colspan="9">
+                                    <div class="empty-message">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        <p>센터를 선택하여 검색하세요.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Instructions Section -->
+            <div class="course-instructions">
+                <div class="instruction-item">
+                    <span class="instruction-number">1</span>
+                    <div class="instruction-content">
+                        <p>기존 회원은 <strong>마이페이지 > 수강이력현황</strong>에서 재수강 신청이 가능합니다.</p>
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-number">2</span>
+                    <div class="instruction-content">
+                        <p>신청 전 <strong>공지사항</strong>에서 프로그램 운영 내용을 확인하세요.</p>
+                        <button class="instruction-link-btn">공지사항 바로가기</button>
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-number">3</span>
+                    <div class="instruction-content">
+                        <p><strong>12월 신규접수 일정</strong></p>
+                        <ul>
+                            <li>구민체육센터: 은평구민 우선접수 12/1(일) 10:00, 수영 12/1(일) 14:00, 타지역 12/2(월) 10:00</li>
+                            <li>청여울수영장: 은평구민 우선접수 12/1(일) 10:00, 수영 12/1(일) 14:00, 타지역 12/2(월) 10:00, 추첨 12/3(화) 10:00</li>
+                        </ul>
+                        <p class="instruction-subnote">※ 각 센터별 세부 접수시간은 공지사항을 확인하세요.</p>
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-number">4</span>
+                    <div class="instruction-content">
+                        <p>신용카드 결제 취소 및 환불 신청은 <strong>마이페이지 > 수강이력현황</strong>에서 가능합니다.</p>
+                        <button class="instruction-link-btn">환불규정 안내 바로가기</button>
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-number">5</span>
+                    <div class="instruction-content">
+                        <p><strong>은평구 다자녀 가구 할인</strong>: 은평구 거주 다자녀 가구는 할인 혜택을 받을 수 있습니다.</p>
+                        <p class="instruction-subnote">신규회원: 회원가입 시 다자녀 가구 증빙서류 제출 → 할인 적용<br>기존회원: 마이페이지에서 다자녀 가구 증빙서류 제출 → 할인 적용</p>
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-number">6</span>
+                    <div class="instruction-content">
+                        <p><strong>은평구 자원봉사자 할인</strong>: 은평구 자원봉사자는 할인 혜택을 받을 수 있습니다.</p>
+                        <p class="instruction-subnote">신규회원: 회원가입 시 자원봉사 증빙서류 제출 → 할인 적용<br>기존회원: 마이페이지에서 자원봉사 증빙서류 제출 → 할인 적용</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // 대분류/소분류 데이터
+        const categoryData = {
+            'sports-town': {
+                major: [
+                    { value: 'fitness', label: '헬스/피트니스' },
+                    { value: 'sports', label: '구기종목' },
+                    { value: 'racket', label: '라켓스포츠' },
+                    { value: 'martial', label: '무도/무예' },
+                    { value: 'dance', label: '댄스/리듬' },
+                    { value: 'yoga', label: '요가/필라테스' }
+                ],
+                minor: {
+                    'fitness': [
+                        { value: 'weight', label: '웨이트트레이닝' },
+                        { value: 'cardio', label: '유산소운동' },
+                        { value: 'pilates', label: '필라테스' }
+                    ],
+                    'sports': [
+                        { value: 'basketball', label: '농구' },
+                        { value: 'volleyball', label: '배구' },
+                        { value: 'badminton', label: '배드민턴' },
+                        { value: 'tabletennis', label: '탁구' }
+                    ],
+                    'racket': [
+                        { value: 'tennis', label: '테니스' },
+                        { value: 'squash', label: '스쿼시' }
+                    ],
+                    'martial': [
+                        { value: 'taekwondo', label: '태권도' },
+                        { value: 'judo', label: '유도' },
+                        { value: 'aikido', label: '합기도' }
+                    ],
+                    'dance': [
+                        { value: 'kpop', label: 'K-POP댄스' },
+                        { value: 'ballroom', label: '댄스스포츠' },
+                        { value: 'hiphop', label: '힙합댄스' }
+                    ],
+                    'yoga': [
+                        { value: 'hatha', label: '하타요가' },
+                        { value: 'vinyasa', label: '빈야사요가' },
+                        { value: 'pilates-yoga', label: '요가필라테스' }
+                    ]
+                }
+            },
+            'swimming-pool': {
+                major: [
+                    { value: 'swimming', label: '수영' },
+                    { value: 'aqua', label: '수중운동' },
+                    { value: 'diving', label: '다이빙' }
+                ],
+                minor: {
+                    'swimming': [
+                        { value: 'beginner', label: '초급반' },
+                        { value: 'intermediate', label: '중급반' },
+                        { value: 'advanced', label: '고급반' },
+                        { value: 'freestyle', label: '자유형' },
+                        { value: 'breaststroke', label: '평영' },
+                        { value: 'backstroke', label: '배영' },
+                        { value: 'butterfly', label: '접영' }
+                    ],
+                    'aqua': [
+                        { value: 'aqua-aerobics', label: '아쿠아에어로빅' },
+                        { value: 'aqua-jogging', label: '아쿠아조깅' }
+                    ],
+                    'diving': [
+                        { value: 'springboard', label: '스프링보드' },
+                        { value: 'platform', label: '플랫폼' }
+                    ]
+                }
+            }
+        };
+
+        // 강좌 데이터
+        const courseData = {
+            'sports-town': {
+                'fitness-weight': [
+                    { id: 1, center: '은평종합스포츠타운', category: '헬스/피트니스 > 웨이트트레이닝', name: '초급 웨이트트레이닝', day: '월,수,금', time: '10:00-11:00', current: 15, max: 20, target: '성인', instructor: '김철수', status: 'new' },
+                    { id: 2, center: '은평종합스포츠타운', category: '헬스/피트니스 > 웨이트트레이닝', name: '중급 웨이트트레이닝', day: '화,목', time: '19:00-20:30', current: 12, max: 15, target: '성인', instructor: '이영희', status: 'new' }
+                ],
+                'fitness-cardio': [
+                    { id: 3, center: '은평종합스포츠타운', category: '헬스/피트니스 > 유산소운동', name: '러닝 클럽', day: '토', time: '07:00-08:30', current: 25, max: 30, target: '전체', instructor: '박민수', status: 'new' }
+                ],
+                'sports-basketball': [
+                    { id: 4, center: '은평종합스포츠타운', category: '구기종목 > 농구', name: '초등부 농구반', day: '토,일', time: '14:00-16:00', current: 18, max: 20, target: '초등학생', instructor: '최동욱', status: 'new' },
+                    { id: 5, center: '은평종합스포츠타운', category: '구기종목 > 농구', name: '성인 농구반', day: '화,목', time: '20:00-22:00', current: 10, max: 12, target: '성인', instructor: '정수진', status: 'closed' }
+                ],
+                'racket-tennis': [
+                    { id: 6, center: '은평종합스포츠타운', category: '라켓스포츠 > 테니스', name: '테니스 입문반', day: '월,수,금', time: '18:00-19:30', current: 8, max: 10, target: '성인', instructor: '한지훈', status: 'new' }
+                ],
+                'dance-kpop': [
+                    { id: 7, center: '은평종합스포츠타운', category: '댄스/리듬 > K-POP댄스', name: 'K-POP 댄스 기초반', day: '화,목', time: '19:00-20:30', current: 20, max: 25, target: '청소년,성인', instructor: '강미라', status: 'new' }
+                ],
+                'yoga-hatha': [
+                    { id: 8, center: '은평종합스포츠타운', category: '요가/필라테스 > 하타요가', name: '하타요가 초급반', day: '월,수,금', time: '09:00-10:00', current: 12, max: 15, target: '성인', instructor: '윤서연', status: 'new' }
+                ]
+            },
+            'swimming-pool': {
+                'swimming-beginner': [
+                    { id: 9, center: '은평청여울수영장', category: '수영 > 초급반', name: '수영 입문반', day: '월,수,금', time: '10:00-11:00', current: 8, max: 10, target: '전체', instructor: '오수영', status: 'new' },
+                    { id: 10, center: '은평청여울수영장', category: '수영 > 초급반', name: '어린이 수영반', day: '화,목', time: '16:00-17:00', current: 12, max: 15, target: '어린이', instructor: '신영수', status: 'new' }
+                ],
+                'swimming-intermediate': [
+                    { id: 11, center: '은평청여울수영장', category: '수영 > 중급반', name: '수영 중급반', day: '월,수,금', time: '19:00-20:00', current: 10, max: 12, target: '성인', instructor: '김수영', status: 'new' }
+                ],
+                'swimming-freestyle': [
+                    { id: 12, center: '은평청여울수영장', category: '수영 > 자유형', name: '자유형 전문반', day: '화,목', time: '20:00-21:30', current: 6, max: 8, target: '성인', instructor: '이수영', status: 'closed' }
+                ],
+                'aqua-aqua-aerobics': [
+                    { id: 13, center: '은평청여울수영장', category: '수중운동 > 아쿠아에어로빅', name: '아쿠아에어로빅', day: '화,목,토', time: '11:00-12:00', current: 15, max: 20, target: '성인', instructor: '박수영', status: 'new' }
+                ],
+                'aqua-aqua-jogging': [
+                    { id: 14, center: '은평청여울수영장', category: '수중운동 > 아쿠아조깅', name: '아쿠아조깅', day: '월,수,금', time: '09:00-10:00', current: 10, max: 15, target: '성인', instructor: '최수영', status: 'new' }
+                ],
+                'diving-springboard': [
+                    { id: 15, center: '은평청여울수영장', category: '다이빙 > 스프링보드', name: '스프링보드 다이빙', day: '토,일', time: '14:00-16:00', current: 5, max: 8, target: '청소년,성인', instructor: '김다이빙', status: 'new' }
+                ]
+            }
+        };
+
+        // 센터 선택 시 대분류 활성화
+        document.getElementById('centerSelect').addEventListener('change', function() {
+            const majorSelect = document.getElementById('majorCategorySelect');
+            const minorSelect = document.getElementById('minorCategorySelect');
+            
+            if (this.value && categoryData[this.value]) {
+                majorSelect.disabled = false;
+                majorSelect.innerHTML = '<option value="">대분류 선택</option>';
+                
+                // 대분류 옵션 추가
+                categoryData[this.value].major.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category.value;
+                    option.textContent = category.label;
+                    majorSelect.appendChild(option);
+                });
+                
+                // 소분류 초기화
+                minorSelect.disabled = true;
+                minorSelect.innerHTML = '<option value="">소분류 선택</option>';
+            } else {
+                majorSelect.disabled = true;
+                minorSelect.disabled = true;
+                majorSelect.innerHTML = '<option value="">대분류 선택</option>';
+                minorSelect.innerHTML = '<option value="">소분류 선택</option>';
+            }
+        });
+
+        // 대분류 선택 시 소분류 활성화
+        document.getElementById('majorCategorySelect').addEventListener('change', function() {
+            const centerSelect = document.getElementById('centerSelect');
+            const minorSelect = document.getElementById('minorCategorySelect');
+            
+            if (this.value && centerSelect.value && categoryData[centerSelect.value]) {
+                const minorCategories = categoryData[centerSelect.value].minor[this.value];
+                
+                if (minorCategories) {
+                    minorSelect.disabled = false;
+                    minorSelect.innerHTML = '<option value="">소분류 선택</option>';
+                    
+                    // 소분류 옵션 추가
+                    minorCategories.forEach(category => {
+                        const option = document.createElement('option');
+                        option.value = category.value;
+                        option.textContent = category.label;
+                        minorSelect.appendChild(option);
+                    });
+                } else {
+                    minorSelect.disabled = true;
+                    minorSelect.innerHTML = '<option value="">소분류 선택</option>';
+                }
+            } else {
+                minorSelect.disabled = true;
+                minorSelect.innerHTML = '<option value="">소분류 선택</option>';
+            }
+        });
+
+        // 초기화 버튼
+        document.querySelector('.btn-reset').addEventListener('click', function() {
+            document.getElementById('centerSelect').value = '';
+            document.getElementById('majorCategorySelect').value = '';
+            document.getElementById('minorCategorySelect').value = '';
+            document.getElementById('majorCategorySelect').disabled = true;
+            document.getElementById('minorCategorySelect').disabled = true;
+            document.getElementById('majorCategorySelect').innerHTML = '<option value="">대분류 선택</option>';
+            document.getElementById('minorCategorySelect').innerHTML = '<option value="">소분류 선택</option>';
+            
+            // 테이블 초기화
+            displayEmptyTable();
+        });
+
+        // 조회 버튼
+        document.querySelector('.btn-search').addEventListener('click', function() {
+            const center = document.getElementById('centerSelect').value;
+            const major = document.getElementById('majorCategorySelect').value;
+            const minor = document.getElementById('minorCategorySelect').value;
+            
+            if (!center || !major || !minor) {
+                alert('센터, 대분류, 소분류를 모두 선택해주세요.');
+                return;
+            }
+            
+            // 강좌 검색
+            const key = `${center}-${major}-${minor}`;
+            const courses = courseData[center] && courseData[center][`${major}-${minor}`] ? courseData[center][`${major}-${minor}`] : [];
+            
+            displayCourses(courses);
+        });
+
+        // 강좌 목록 표시 함수
+        function displayCourses(courses) {
+            const tbody = document.querySelector('.course-table tbody');
+            const statusFilter = document.querySelector('.status-btn.active')?.getAttribute('data-status') || 'new';
+            
+            // 상태 필터 적용
+            const filteredCourses = courses.filter(course => course.status === statusFilter);
+            
+            if (filteredCourses.length === 0) {
+                tbody.innerHTML = `
+                    <tr class="course-empty-row">
+                        <td colspan="9">
+                            <div class="empty-message">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <p>해당 조건의 강좌가 없습니다.</p>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            tbody.innerHTML = filteredCourses.map(course => `
+                <tr>
+                    <td>${course.id}</td>
+                    <td>${course.center}</td>
+                    <td>${course.category}</td>
+                    <td>${course.name}</td>
+                    <td>${course.day}<br>${course.time}</td>
+                    <td>${course.current}/${course.max}</td>
+                    <td>${course.target}</td>
+                    <td>${course.instructor}</td>
+                    <td>
+                        <button class="btn-apply" ${course.status === 'closed' ? 'disabled' : ''}>
+                            ${course.status === 'closed' ? '접수종료' : '신청'}
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        // 빈 테이블 표시 함수
+        function displayEmptyTable() {
+            const tbody = document.querySelector('.course-table tbody');
+            tbody.innerHTML = `
+                <tr class="course-empty-row">
+                    <td colspan="9">
+                        <div class="empty-message">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>센터를 선택하여 검색하세요.</p>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        }
+
+        // 상태 버튼 토글
+        document.querySelectorAll('.status-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.status-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 현재 선택된 조건으로 다시 검색
+                const center = document.getElementById('centerSelect').value;
+                const major = document.getElementById('majorCategorySelect').value;
+                const minor = document.getElementById('minorCategorySelect').value;
+                
+                if (center && major && minor) {
+                    const key = `${center}-${major}-${minor}`;
+                    const courses = courseData[center] && courseData[center][`${major}-${minor}`] ? courseData[center][`${major}-${minor}`] : [];
+                    displayCourses(courses);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
